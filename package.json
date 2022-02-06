@@ -2,7 +2,7 @@
   "name": "blogr-landing-page",
   "version": "1.0.0",
   "description": "landing page",
-  "main": "script.js",
+  "main": "index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel index.html --open chrome",
