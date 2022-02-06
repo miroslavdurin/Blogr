@@ -6,7 +6,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel index.html --open chrome",
-    "build":"parcel build index.html --dist-dir ./dist",
+    "build":"parcel build index.html",
     "sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "Miroslav",
