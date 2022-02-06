@@ -1,0 +1,105 @@
+.section__state{
+    height: 40rem;       
+    background-image: url('../images/bg-pattern-circles.svg'), $gradient-body;
+    background-repeat: no-repeat;
+    background-position: bottom left;    
+    position: relative; 
+    border-radius: 0 100px 0 100px;
+
+    @media only screen and(min-width: $bp-big-screen) {
+        margin-top: 15rem;
+    }
+
+    @media only screen and (max-width: $bp-large-2) {
+        margin-top: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-medium-2) {
+        margin-top: 30rem;
+        height: 100%;
+        text-align: center;
+    }
+
+    @media only screen and(max-width: $bp-small) {
+        margin-top: 25rem;
+    }
+}
+
+
+
+.state{
+    &__content{
+        width: 100%; 
+        margin-top: 17%;
+        margin-left: 2rem;          
+        
+        @media only screen and(min-width: $bp-big-screen) {
+            margin-left: 10rem;
+        }
+
+        @media only screen and (max-width: $bp-large-1) {
+            margin-left: 4rem;   
+            margin-top: 15%;            
+            text-align: left;          
+            padding-bottom: 10rem;            
+            padding-right: 4rem;
+        }
+
+        @media only screen and (max-width: $bp-large-2) {
+            margin-left: 0rem;   
+        }
+
+        @media only screen and (max-width: $bp-medium-2) {
+            width: 100%; 
+            margin-top: -15rem;
+            margin-left: 0;
+            padding-right: 0;
+            padding-bottom: 10rem;
+            text-align: center;         
+
+        }
+
+        @media only screen and(max-width: $bp-small) {
+            margin: -15rem auto 1.5rem;
+            text-align: center;    
+            width: 90%;
+
+            h2 {
+                font-size: 4rem;
+            }
+        }
+
+        .paragraph {
+            @media only screen and (max-width: $bp-medium-2) {
+                margin: 0 auto;
+                width: 90%;
+                padding-right: 0;
+            }
+        }
+    }   
+
+    &__image{            
+        width: 90%;
+        transform: translate(-5%,-13%);
+
+        @media only screen and (max-width: $bp-medium-2) {
+            width: 60%;             
+            transform: translate(33%, -40%); 
+        }
+
+        @media only screen and(max-width: $bp-small) {
+            width: 80%;             
+            transform: translate(12%, -40%);
+        }
+
+        img {
+            display: block;
+            width: 100%;
+
+            @media only screen and (max-width: $bp-medium-2) {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}

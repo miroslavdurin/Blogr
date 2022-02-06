@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-position: left;
+    background-size: 170%;
+    background-repeat: no-repeat;
+    background-image:url('../images/bg-pattern-intro.svg'), $gradient-intro ;
+    padding: 5rem 15rem;
+    width: 100%;
+    color: $color-white;
+    border-radius: 0 0 0 100px;
+
+    @media only screen and(max-width: $bp-large-2) {
+        padding: 5rem 0;
+    }
+
+    @media only screen and (max-width: $bp-medium-1) {                
+        padding: 5rem 0;
+    }
+
+    @media only screen and (max-width: $bp-medium-2) {
+        padding: 14rem 0 10rem 0;
+    }
+
+    @media only screen and(max-width: $bp-small) {
+        margin-bottom: 10rem;
+    }
+
+    &__text-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 13rem;
+
+        @media only screen and(max-width: $bp-large-2) {
+            margin: 10rem;
+        }
+
+        @media only screen and (max-width: $bp-medium-1) {
+            margin: 5rem auto;
+        }
+    }
+
+    &__buttons-box{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .btn{
+            margin-right: 2rem;
+        }
+    }   
+
+    &__logo {
+        @media only screen and(max-width: $bp-large-2) {
+            width: 80%;
+        }
+    }
+}

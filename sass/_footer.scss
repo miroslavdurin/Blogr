@@ -1,0 +1,70 @@
+.footer{
+    background-color: $color-very-dark-black-blue;
+    border-radius: 0 100px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7rem 30rem 7rem 16.5rem;
+    color: $color-white;
+    font-family: "Ubuntu";
+
+    @media only screen and(max-width: $bp-large-2) {
+        padding: 5rem 25rem 5rem 18rem;
+    }
+
+    @media only screen and (max-width: $bp-medium-2) {
+        padding: 7rem 10rem 7rem 8rem;
+    }
+
+    @media only screen and(max-width: $bp-small) {
+        font-size: 1.8rem; 
+        text-align: center;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between; 
+        align-items: center;      
+        padding: 7.5rem 7.5rem 5rem 7.5rem;  
+    }
+    
+    &__logo-box {
+        @media only screen and(max-width: $bp-small) {
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__list{
+        list-style: none;
+
+        @media only screen and(max-width: $bp-small) {
+            margin-bottom: 5rem;
+        }
+    }
+    
+    &__item{
+        &:not(:last-child){
+            margin-bottom: 1.2rem;
+
+            @media only screen and(max-width: $bp-large-2) {
+                margin-bottom: 0.7rem;
+            }
+        }
+
+        &:first-child {
+            font-weight: 600;
+            margin-bottom: 3rem;
+
+            @media only screen and(max-width: $bp-small) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        display: inline-block;
+        color: currentColor;
+        font-weight: 300;  
+        position: relative;
+       
+    }
+}

@@ -1,0 +1,75 @@
+$default-font-size: 1.6rem;
+
+$color-primary-blue: #1f3f5b;
+$color-primary-light-red:#dd3541;
+$color-primary-very-light-red: #ff7a85;
+
+$color-white: #fff;
+$color-grayish-blue: #c8c8cb;
+$color-very-dark-grayish-blue: #4b5862;
+$color-very-dark-black-blue: #25252d;
+
+$gradient-intro: linear-gradient(to right bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%) );
+$gradient-body: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+
+$bp-big-screen: 100rem;      //1600px
+$bp-large-1: 85em;           //1360px
+$bp-large-2: 76.25em;        //1200px
+$bp-medium-1: 65.625em;      //1050px
+$bp-medium-2: 56.25em;       //900px
+$bp-small: 40.625em;         //650px
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%;
+
+    @media only screen and(max-width: $bp-large-2) {
+        html{
+            font-size: 55%;
+        }
+    }
+
+    @media only screen and (max-width: $bp-medium-2) {
+        font-size: 62.5%;
+    }    
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Overpass","Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: $default-font-size;
+    line-height: 1.7;
+    color: $color-primary-blue;     
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+
+.container{    
+    max-width: 118rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;   
+    
+    @media only screen and (max-width: $bp-medium-2) {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    &__col-1-of-2{
+        width: 50%;    
+        
+        @media only screen and (max-width: $bp-medium-2) {
+            width: 100%;
+        }
+    }
+}    

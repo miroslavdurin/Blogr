@@ -1,0 +1,115 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu";
+    text-decoration: none;
+    border-radius: 100rem;
+    font-weight: 700;
+    width: 13.7rem;
+    height: 4.8rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all .3s;   
+    font-size: 1.6rem;
+
+    &--white{
+        color: $color-primary-light-red;
+        background-color: $color-white;
+
+        &:hover{
+            color: $color-white;
+            background-color: $color-primary-very-light-red;
+        }
+    }
+
+    &--red {
+        color: $color-white;
+        border: 1px solid $color-white;
+
+        &:hover{
+            color: $color-primary-light-red;
+            background-color: $color-white;
+        }
+    }
+    
+    &--orange{
+        color: $color-white;
+        background-image: $gradient-intro;
+    }
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);;
+}
+
+.btn:active{
+    transform: translateY(-1.5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);;
+}
+
+.link--hover{
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;        
+        bottom: 0;
+        background-color: $color-white;
+        width: 0%;
+        height: 2px;
+        transition: all .2s;
+    }
+
+    &:hover::after{
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        background-color: $color-white;
+        width: 100%;
+        height:2px;
+    }
+}
+
+.dropdown {  
+    width: 17rem;
+    background-color: $color-white;
+    position: absolute;
+    top: 100%;
+    left: -25%;
+    color: $color-very-dark-black-blue;
+    border-radius: 5px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
+    font-size: 1.5rem;    
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__list {
+        list-style: none;       
+        width: 100%;
+        padding: 2.4rem;
+    }
+
+    &__item{
+        cursor: pointer;  
+    }
+
+    &__item:not(:last-child){
+        margin-bottom: 1rem;
+    }
+
+    &__link{
+        text-decoration: none;       
+        font-weight: 400;  
+    }
+
+    &__item:hover &__link{
+        font-weight: 600;          
+    }
+}
