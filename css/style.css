@@ -355,6 +355,9 @@ body {
     @media only screen and (max-width: 65.625em) {
       .header__text-box {
         margin: 5rem auto; } }
+    @media only screen and (max-width: 65.625em) {
+      .header__text-box {
+        padding: 0 4rem; } }
   .header__buttons-box {
     display: flex;
     justify-content: center;

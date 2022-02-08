@@ -42,6 +42,10 @@
         @media only screen and (max-width: $bp-medium-1) {
             margin: 5rem auto;
         }
+
+        @media only screen and (max-width: $phone) {
+            padding: 0 4rem;
+        }
     }
 
     &__buttons-box{
