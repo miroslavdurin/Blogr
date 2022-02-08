@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-./images/Blogr-Frontend-Mentor.jpg
+https://ibb.co/X34gHTZ
 
 ### Links
 
