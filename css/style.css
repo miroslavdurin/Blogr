@@ -196,8 +196,11 @@ body {
   background-position: bottom left;
   position: relative;
   border-radius: 0 100px 0 100px;
-  margin-top: 15rem; }
-  @media only screen and (max-width: 76.25em) {
+  margin-top: 3rem; }
+  @media only screen and (min-width: 100rem) {
+    .section__state {
+      margin-top: 10rem; } }
+  @media only screen and (max-width: 65.625em) {
     .section__state {
       margin-top: 10rem; } }
   @media only screen and (max-width: 56.25em) {
@@ -324,7 +327,7 @@ body {
   background-size: 170%;
   background-repeat: no-repeat;
   background-image: url("../images/bg-pattern-intro.svg"), linear-gradient(to right bottom, #ff8f70, #ff3d54);
-  padding: 6.3rem 15rem;
+  padding: 6.3rem 15rem 4.5rem;
   width: 100%;
   color: #fff;
   border-radius: 0 0 0 100px; }
@@ -642,8 +645,8 @@ body {
     font-weight: 600; }
 
 .section__about {
-  margin-top: 27rem;
-  margin-bottom: -5rem; }
+  margin-top: 28rem;
+  margin-bottom: -7rem; }
   @media only screen and (min-width: 100rem) {
     .section__about {
       margin-top: 40rem; } }
