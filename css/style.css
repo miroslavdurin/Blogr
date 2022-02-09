@@ -195,10 +195,8 @@ body {
   background-repeat: no-repeat;
   background-position: bottom left;
   position: relative;
-  border-radius: 0 100px 0 100px; }
-  @media only screen and (min-width: 100rem) {
-    .section__state {
-      margin-top: 15rem; } }
+  border-radius: 0 100px 0 100px;
+  margin-top: 15rem; }
   @media only screen and (max-width: 76.25em) {
     .section__state {
       margin-top: 10rem; } }
