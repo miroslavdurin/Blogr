@@ -73,7 +73,8 @@
             display: inline-block;
             text-decoration: none;
             color: currentColor;      
-            position: relative; 
+            position: relative;             
+            overflow: hidden;
 
             &::after {
                 content: '';
@@ -214,12 +215,14 @@
     }
 
     &__item--title:hover { 
+        overflow: visible;
+
         &::after {
             transform: scaleX(100%);
         }
 
         .dropdown {
-        max-height: 400px;    
+            max-height: 400px;          
         }
         
         .icon-arrow {

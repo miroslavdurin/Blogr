@@ -6,7 +6,7 @@
     background-size: 170%;
     background-repeat: no-repeat;
     background-image:url('../images/bg-pattern-intro.svg'), $gradient-intro ;
-    padding: 5rem 15rem;
+    padding: 6.3rem 15rem;
     width: 100%;
     color: $color-white;
     border-radius: 0 0 0 100px;
@@ -33,7 +33,7 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-        margin: 13rem;
+        margin: 11rem;
 
         @media only screen and(max-width: $bp-large-2) {
             margin: 10rem;
@@ -43,7 +43,7 @@
             margin: 5rem auto;
         }
 
-        @media only screen and (max-width: $phone) {
+        @media only screen and (max-width: $bp-small) {
             padding: 0 4rem;
         }
     }

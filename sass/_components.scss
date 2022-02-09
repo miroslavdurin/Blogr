@@ -81,7 +81,7 @@
     color: $color-very-dark-black-blue;
     border-radius: 5px;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
-    font-size: 1.5rem;    
+    font-size: 1.5rem;        
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-out;    
@@ -91,13 +91,20 @@
     justify-content: center;
 
     &__list {
-        list-style: none;       
-        width: 100%;
-        padding: 2.4rem;
+        list-style: none;     
+        /* padding: 2.4rem; */
     }
 
     &__item{
-        cursor: pointer;  
+        cursor: pointer;
+        
+        &:first-child {
+            padding-top: 2.4rem;
+        }
+
+        &:last-child {
+            padding-bottom: 2.4rem;
+        }
     }
 
     &__item:not(:last-child){
